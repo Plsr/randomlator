@@ -12,9 +12,9 @@ Who needs this shit, I hear you aksing? Noone, I just wanted it to exist.
 Changelog
 ===========
 
-30.07.13
+Version 0.1
 ------
-__Version 0.1__  
+__30.07.2013__  
 Basic Code implemented.  
 Randomlator supports 4 kinds of Arithmetic operations. UI is non-existant. If there would be 
 a situation when a number would be divided by 0, the Program just cancels.
