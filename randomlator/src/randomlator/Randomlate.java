@@ -4,20 +4,34 @@ public class Randomlate {
 	
 	private int operator1;
 	private int operator2;
-	private static int random = randomNumber();
+	private int random;
 	
 	public Randomlate(int a, int b){
 		operator1 = a;
 		operator2 = b;
+		randomNumber();
 	}
 	
 	/**
 	 * Generates a random Integer between 0 and 3.
 	 * @return	random Integer
 	 */
-	private static int randomNumber() {
-		double random = Math.random() * 4;
-		return (int) random;
+	private void randomNumber() {
+		double randDouble = Math.random() * 4;
+		int rand = (int) randDouble;
+		random = rand;
+		divideZeroTest();
+		
+	}
+	
+	/**
+	 * Tests if there could be a division by 0. If so, 
+	 * runs <tt>randomNumber</tt> again.
+	 */
+	private void divideZeroTest() {
+		if(random == 3 && operator2 == 0){
+			randomNumber();
+		}
 	}
 	
 	/**
