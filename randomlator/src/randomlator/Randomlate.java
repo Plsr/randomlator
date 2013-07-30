@@ -11,11 +11,19 @@ public class Randomlate {
 		operator2 = b;
 	}
 	
+	/**
+	 * Generates a random Integer between 0 and 3.
+	 * @return	random Integer
+	 */
 	private static int randomNumber() {
 		double random = Math.random() * 4;
 		return (int) random;
 	}
 	
+	/**
+	 * Performs an Arithmetic operation based on <tt>random</tt>.
+	 * @return result of the operation
+	 */
 	private int calculus(){
 		int result;
 		
@@ -39,6 +47,10 @@ public class Randomlate {
 		return result;
 	}
 	
+	/**
+	 * Recognizes which operation was executed by random.
+	 * @return string with the operation
+	 */
 	public String operation() {
 		String operation;
 		
@@ -67,6 +79,10 @@ public class Randomlate {
 		return operation;
 	}
 	
+	/**
+	 * Prints out the result.
+	 * @return string of the two operands, the operation and the result
+	 */
 	public String calculate(){
 		return operator1 + operation() + operator2 + "=" + calculus();
 	}
